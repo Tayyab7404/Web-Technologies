@@ -2,41 +2,33 @@
 
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset='utf-8'>
+        <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
 
         <title>Moving Message</title>
 
         <style>
-            body
-            {
-                background-color: pink;
-            }
-
             marquee
             {
                 background: palevioletred;
                 border: black 3px solid;
                 padding: 10px;
-                font-family: Verdana, Geneva, Tahoma, sans-serif;
-                font-size: 20px;
-            }
-            
-            h3
-            {
-                font-family: Algerian;
-                font-size: 30px;
             }
         </style>
     </head>
 
-    <body>
+    <body bgcolor="pink">
         <center>
-            <h3>Hello..</h3>
+            <font face="Algerian" size="5px">
+                <h3>Hello..</h3>
+            </font>
             <br>
+            <!-- Marquee tag to display a moving message -->
             <marquee direction="right" behavior="alternate">
-                This is a Moving Message
+                <font face="Verdana" size="4px" color="red">
+                    This is a Moving Message
+                </font> 
             </marquee>
         </center>
     </body>
