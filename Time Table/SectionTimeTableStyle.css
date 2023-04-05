@@ -1,0 +1,62 @@
+
+body
+{
+	background-color:azure;
+	background-image: url("BGimg1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+table
+{
+	align-self: center;
+	border:solid;
+	border-collapse: collapse;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding:10px;
+	margin-top:80px;
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color:black;
+	width: fit-content;
+}
+
+th,td
+{
+	border:solid;
+	border-collapse: collapse;
+	text-align: center;
+	padding:6px;
+	margin-top:70px;
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color:black;
+}
+
+tr:nth-child(odd) 
+{
+	background-color: rgba(150, 212, 212, 0.4);
+}
+
+tr:nth-child(even) 
+{
+	background-color:burlywood;
+}
+
+th:nth-child(even) 
+{
+	background-color:burlywood;
+}
+
+th:nth-child(odd) 
+{
+	background-color:az;
+}
+
+tr:hover
+{
+	background-color: beige;
+}
