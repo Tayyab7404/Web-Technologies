@@ -1,0 +1,51 @@
+body
+{
+	background-color:azure;
+	background-image: url("BGimg4.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+table
+{
+	align-self: center;
+	border:solid;
+	border-collapse: collapse;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	padding:10px;
+	margin-top:80px;
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color:black;
+	width: fit-content;
+}
+
+th,td
+{
+	border:solid;
+	border-collapse: collapse;
+	text-align: center;
+	padding:6px;
+	margin-top:70px;
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	color:black;
+}
+
+th
+{
+	background-color: burlywood;
+}
+
+td:hover
+{
+	background-color: beige;
+}
+
+.subject
+{
+	background-color:blanchedalmond;
+}
