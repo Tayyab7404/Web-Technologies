@@ -1,0 +1,2 @@
+"liveServer.settings.multiRootWorkspaceName": "",
+"liveServer.settings.port": 0
