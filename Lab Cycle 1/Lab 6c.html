@@ -4,20 +4,40 @@
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-        <title>Trail Details</title>
         <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+        <title>Trail Details</title>
+
         <style>
             table,th
             {
                 font-family: Verdana;
                 border: 3px solid black;
                 border-collapse: collapse;
+                text-align: center;
+                height: 50px;
+            }
+            td
+            {
+                height: 50px;
+            }
+            .Header
+            {
+                background-color: rgb(247, 158, 86);
+                text-align: center;
+                border: solid;
+                align-self: center;
+                padding: 10px;
             }
         </style>
     </head>
 
     <body bgcolor="azure">
-        <table border="solid" width="1000" height="100" align="center">
+        <div class="Header">
+            <font face="Verdana" size="5">Train Details</font>
+        </div>
+        <br><br><br>
+        <table border="solid" width="1200" height="100" align="center">
             <tr>
                 <th rowspan="2">
                     Name of the Train
@@ -52,6 +72,36 @@
                 <th>
                     Departure
                 </th>
+            </tr>
+
+            <tr>
+                <td>Palnadu Express</td>
+                <td>GUNTUR JN (GNT)</td>
+                <td>VIKARABAD JN (VKB)</td>
+                <td>12747</td>
+                <td>5:30 AM</td>
+                <td>5:45 AM</td>
+                <td>Rs.550</td>
+            </tr>
+
+            <tr>
+                <td>Vande Bharat Express</td>
+                <td>SECUNDERABAD JN (SC)</td>
+                <td>TIRUPATI (TPTY)</td>
+                <td>20701</td>
+                <td>5:45 AM</td>
+                <td>6:00 AM</td>
+                <td>Rs.1680</td>
+            </tr>
+
+            <tr>
+                <td>SC Intercity</td>
+                <td>VIJAYAWADA JN (BZA)</td>
+                <td>SECUNDERABAD JN (SC)</td>
+                <td>12795</td>
+                <td>5:15 PM</td>
+                <td>5:30 PM</td>
+                <td>Rs.580</td>
             </tr>
         </table>
     </body>
