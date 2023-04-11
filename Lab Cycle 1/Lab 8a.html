@@ -9,28 +9,22 @@
         <title>Bio Data</title>
     </head>
 
-    <body>
-        <form autocomplete="off">
+    <body bgcolor="lightgreen">
+        <center>
+        <form class="inputs" autocomplete="off">
+            <h1><u>BIO DATA FORM</u></h1>
             <label>Name:</label>
-            <input type="text" name="name" id="name" required>
-
+            <input class="inputbox" type="text" name="name" id="name" required>
             <br><br>
-
             <label>Email:</label>
-            <input type="email" name="email" id="email" required>
-
+            <input class="inputbox" type="email" name="email" id="email" required>
             <br><br>
-
             <label>Phone Number:</label>
-            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
-
+            <input class="inputbox" type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
             <br><br>
-
             <label>Date of Birth:</label>
-            <input type="date" name="dob" id="dob" required>
-
+            <input class="inputbox" type="date" name="dob" id="dob" required>
             <br><br>
-
             <label>Gender:</label>
             <select name="gender" id="gender" required>
                 <option value="">Select</option>
@@ -39,53 +33,51 @@
                 <option value="trans">Trans Gender</option>
                 <option value="nonbinary">Non-Binary</option>
             </select>
-
             <br><br>
-
             <label>Address:</label>
-            <textarea name="address" id="address" required></textarea>
-
+            <textarea class="inputbox" name="address" id="address"></textarea>
             <br><br>
-
-            <label>Education Details:</label>
+            <label><u>Education Details</u></label>
             <br><br>
-            <label>Graduation</label>
-            <br><br>
+            <label><u>1. Graduation</u></label>
+            <br>
             <label>College name:</label>
-            <input type="text" name="collegename1" id="collegename1">
+            <input class="inputbox" type="text" name="collegename1" id="collegename1">
             <br>
             <label>GPA:</label>
-            <input type="number" name="gpa1" id="gpa1" min="0" max="10" step="0.01">
+            <input class="inputbox" type="number" name="gpa1" id="gpa1" min="0" max="10" step="0.01">
             <br>
             <label>Year of Passing:</label>
-            <input type="number" name="passyear1" id="passyear1" min="1900" max="2100">
+            <input class="inputbox" type="number" name="passyear1" id="passyear1" min="1900" max="2100">
             <br><br>
-            <label>Intermediate</label>
-            <br><br>
+            <label><u>2. Intermediate</u></label>
+            <br>
             <label>College name:</label>
-            <input type="text" name="collegename2" id="collegename2">
+            <input class="inputbox" type="text" name="collegename2" id="collegename2">
             <br>
             <label>Percentage:</label>
-            <input type="number" name="percentage" id="percentage" min="0" max="100" step="0.01">
+            <input class="inputbox" type="number" name="percentage" id="percentage" min="0" max="100" step="0.01">
             <br>
             <label>Year of Passing:</label>
-            <input type="number" name="passyear2" id="passyear2" min="1900" max="2100">
+            <input class="inputbox" type="number" name="passyear2" id="passyear2" min="1900" max="2100">
             <br><br>
-            <label>10th Class:</label>
-            <br><br>
+            <label><u>3. 10th Class:</u></label>
+            <br>
             <label>School Name:</label>
-            <input type="text" name="schoolname" id="schoolname">
+            <input class="inputbox" type="text" name="schoolname" id="schoolname">
             <br>
             <label>GPA:</label>
-            <input type="number" name="gpa2" id="gpa2" min="0" max="10" step="0.01">
+            <input class="inputbox" type="number" name="gpa2" id="gpa2" min="0" max="10" step="0.01">
             <br>
             <label>Year of Passing:</label>
-            <input type="number" name="passyear3" id="passyear3" min="1900" max="2100">
+            <input class="inputbox" type="number" name="passyear3" id="passyear3" min="1900" max="2100">
             <br><br>
-            <label for="experience">Work Experience:</label>
-            <input type="number" name="experience" id="experience" min="0" max="40" required>
-            <br>
-            <input type="submit" value="Submit">
+            <label for="experience">Work Experience (in years):</label>
+            <input class="inputbox" type="number" name="experience" id="experience" min="0" max="40" required>
+            <br><br>
+            <input type="submit" value="SUBMIT FORM">
+            <input type="reset" value="CLEAR FORM">
         </form>
+        </center>
     </body>
 </html>
