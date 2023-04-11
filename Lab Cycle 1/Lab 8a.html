@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Bio Data</title>
+    </head>
+
+    <body>
+        <form autocomplete="off">
+            <label>Name:</label>
+            <input type="text" name="name" id="name" required>
+
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email" name="email" id="email" required>
+
+            <br><br>
+
+            <label>Phone Number:</label>
+            <input type="tel" name="phone" id="phone" pattern="[0-9]{10}" required>
+
+            <br><br>
+
+            <label>Date of Birth:</label>
+            <input type="date" name="dob" id="dob" required>
+
+            <br><br>
+
+            <label>Gender:</label>
+            <select name="gender" id="gender" required>
+                <option value="">Select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="trans">Trans Gender</option>
+                <option value="nonbinary">Non-Binary</option>
+            </select>
+
+            <br><br>
+
+            <label>Address:</label>
+            <textarea name="address" id="address" required></textarea>
+
+            <br><br>
+
+            <label>Education Details:</label>
+            <br><br>
+            <label>Graduation</label>
+            <br><br>
+            <label>College name:</label>
+            <input type="text" name="collegename1" id="collegename1">
+            <br>
+            <label>GPA:</label>
+            <input type="number" name="gpa1" id="gpa1" min="0" max="10" step="0.01">
+            <br>
+            <label>Year of Passing:</label>
+            <input type="number" name="passyear1" id="passyear1" min="1900" max="2100">
+            <br><br>
+            <label>Intermediate</label>
+            <br><br>
+            <label>College name:</label>
+            <input type="text" name="collegename2" id="collegename2">
+            <br>
+            <label>Percentage:</label>
+            <input type="number" name="percentage" id="percentage" min="0" max="100" step="0.01">
+            <br>
+            <label>Year of Passing:</label>
+            <input type="number" name="passyear2" id="passyear2" min="1900" max="2100">
+            <br><br>
+            <label>10th Class:</label>
+            <br><br>
+            <label>School Name:</label>
+            <input type="text" name="schoolname" id="schoolname">
+            <br>
+            <label>GPA:</label>
+            <input type="number" name="gpa2" id="gpa2" min="0" max="10" step="0.01">
+            <br>
+            <label>Year of Passing:</label>
+            <input type="number" name="passyear3" id="passyear3" min="1900" max="2100">
+            <br><br>
+            <label for="experience">Work Experience:</label>
+            <input type="number" name="experience" id="experience" min="0" max="40" required>
+            <br>
+            <input type="submit" value="Submit">
+        </form>
+    </body>
+</html>
