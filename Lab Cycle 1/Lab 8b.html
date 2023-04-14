@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Color Picker</title>
+		<style>
+			body 
+			{
+				font-family: calibri;
+				font-size: 16px;
+				line-height: 1.5;
+				margin-left:43%;
+			}
+
+			h1 
+			{
+				margin-top: 50px;
+			}
+
+			form 
+			{
+				margin-top: 30px;
+			}
+			
+			label
+			{
+				font-size: 25px;
+				font-weight: bold;
+			}
+
+			input[type="radio"] 
+			{
+				display: inline-block;
+				margin-right: 10px;
+			}
+
+			.color-sample 
+			{
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				border-radius: 50%;
+				margin-right: 10px;
+			}
+
+			.red    { background-color: #ff0000; }
+			.green  { background-color: #00ff00; }
+			.blue   { background-color: #0000ff; }
+			.yellow { background-color: #ffff00; }
+			.purple { background-color: #800080; }
+		</style>
+	</head>
+	
+	<body>
+		<h1><u>Color Picker</u></h1>
+		
+		<form>
+			<label>
+				<input type="radio" name="color" value="red" onclick="document.body.style.backgroundColor = '#ff0000';">
+				<span class="color-sample red"></span>Red
+			</label>
+			<br><br>
+			<label>
+				<input type="radio" name="color" value="green" onclick="document.body.style.backgroundColor = '#00ff00';">
+				<span class="color-sample green"></span>Green
+			</label>
+			<br><br>
+			<label>
+				<input type="radio" name="color" value="blue" onclick="document.body.style.backgroundColor = '#0000ff';">
+				<span class="color-sample blue"></span>Blue
+			</label>
+			<br><br>
+			<label>
+				<input type="radio" name="color" value="yellow" onclick="document.body.style.backgroundColor = '#ffff00';">
+				<span class="color-sample yellow"></span>Yellow
+			</label>
+			<br><br>
+			<label>
+				<input type="radio" name="color" value="purple" onclick="document.body.style.backgroundColor = '#800080';">
+				<span class="color-sample purple"></span>Purple
+			</label>
+			<br><br>
+		</form>
+	</body>
+</html>
