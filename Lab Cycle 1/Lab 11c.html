@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<title>Square Animation Example</title>
+		<style>
+			.square 
+			{
+				width: 50px;
+				height: 50px;
+				background-color: red;
+				position: absolute;
+				animation: squareMove 4s linear infinite;
+			}
+
+			@keyframes squareMove 
+			{
+				0% 
+				{
+					top: 20px;
+					left: 30%;
+				}
+
+				25% 
+				{
+					top: 20px;
+					left: 70%;
+				}
+
+				50% 
+				{
+					top: 520px;
+					left: 70%;
+				}
+
+				75% 
+				{
+					top: 520px;
+					left: 30%;
+				}
+
+				100% 
+				{
+					top: 20px;
+					left: 30%;
+				}
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div class="square">
+		</div>
+	</body>
+</html>
