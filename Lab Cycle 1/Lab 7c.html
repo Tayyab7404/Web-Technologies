@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+		<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+		<meta name='viewport' content='width=device-width, initial-scale=1'>
+		
+		<title>Two Rows, Two Columns Frameset with Background Colors</title>
+		
+		<style>
+			#one
+			{
+				background-color: red;
+			}
+			#two
+			{
+				background-color: blue;
+			}
+			#three
+			{
+				background-color: green;
+			}
+		</style>
+	</head>
+
+	<frameset rows="50%, 50%">
+		<frame id="one">
+		
+		<frameset cols="50%, 50%">
+			<frame id="two">
+			<frame id="three">
+		</frameset>
+	</frameset>
+
+	<body>
+		<p>This content will be displayed if the browser does not support frames.</p>
+	</body>
+</html>

@@ -27,15 +27,16 @@
 			  padding: 20px;
 			  border-radius: 5px;
 			  box-shadow: 0px 0px 5px #ccc;
-			  width: 600px;
+			  width: 500px;
 			  margin: auto;
+			  font-weight: bold;
+			  align-items: center;
 			}
 
 			/* Form label */
 			label 
 			{
 			  display: block;
-			  font-weight: bold;
 			  margin-top: 10px;
 			}
 
@@ -45,6 +46,7 @@
 			input[type="tel"],
 			input[type="date"],
 			input[type="number"],
+			input[type="file"],
 			select,
 			textarea 
 			{
@@ -62,12 +64,6 @@
 			select 
 			{
 			  height: 40px;
-			}
-
-			/* File upload */
-			input[type="file"] 
-			{
-			  margin-top: 10px;
 			}
 
 			/* Submit button */
@@ -134,7 +130,7 @@
             <input type="number" name="gpa1" id="gpa1" min="0" max="10" step="0.01" required>
             
             <label>Year of Passing:</label>
-            <input type="number" name="passyear1" id="passyear1" required>
+            <input type="number" name="passyear1" id="passyear1" min="1900" max="2100" required>
             
 			<br><br>
 			
@@ -146,7 +142,7 @@
             <input type="number" name="percentage" id="percentage" min="0" max="100" step="0.01">
             
             <label>Year of Passing:</label>
-            <input type="number" name="passyear2" id="passyear2">
+            <input type="number" name="passyear2" id="passyear2" min="1900" max="2100" >
             
 			<br><br>
 			
@@ -158,7 +154,7 @@
             <input type="number" name="gpa2" id="gpa2" min="0" max="10" step="0.01">
             
             <label>Year of Passing:</label>
-            <input type="number" name="passyear3" id="passyear3">
+            <input type="number" name="passyear3" id="passyear3" min="1900" max="2100" >
             
 			<br><br>
 			
@@ -166,7 +162,11 @@
             <input type="number" name="experience" id="experience" min="0" max="40" required>
             
 			<label>Id Proof:</label>
-			<input type="file" required></input>
+			<input type="file" required>
+
+			<br>
+
+			<input type="checkbox">&nbsp; I have checked the form before submitting.
 			
 			<br><br>
 			
