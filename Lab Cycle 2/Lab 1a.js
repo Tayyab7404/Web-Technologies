@@ -1,32 +1,20 @@
-function isLeap(year) 
+// Lab 1 a:
+
+function isLeapYear(year) 
 {
-	if (year % 4 === 0) 
+    if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) 
 	{
-		if (year % 100 === 0)
-		{
-			if (year % 400 == 0)
-			{
-				return 1;
-			} 
-			else 
-			{
-				return 0;
-			}
-		} 	
-		else 
-		{
-			return 1;
-		}
-	} 
-	else
+        return true;
+    } 
+	else 
 	{
-		return 0;
-	}
+        return false;
+    }
 }
 
 let year = prompt("Enter a year: ");
 
-if(isLeap(year))
+if(isLeapYear(year))
 {
 	console.log(year,"is a Leap Year");
 }
