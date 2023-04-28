@@ -1,24 +1,19 @@
-// Lab 1 c:
+// Simple Calculator:
 
-function calculate(num1, num2, operator) 
+function Calculate(n1, oper, n2)
 {
-    switch (operator) 
+	switch(oper)
 	{
-        case '+':
-            return num1 + num2;
-        case '-':
-            return num1 - num2;
-        case '*':
-            return num1 * num2;
-        case '/':
-            return num1 / num2;
-        default:
-            return "Invalid operator";
-    }
+		case '+':
+			return n1 + n2;
+			break;
+		default:
+			document.writeln(
+	}	
 }
 
-let n1 = prompt("Enter first operand: ");
-let oper = prompt("Enter the operator: ");
-let n2 = prompt("Enter second operand: ");
+let n1 = parseInt(window.prompt("Enter first operand:"));
+let oper = window.prompt("Enter the operator:");
+let n2 = parseInt(window.prompt("Enter Second operand:"));
 
-console.log(n1,oper,n2,"=",calculate(n1,n2,oper));
+Calculate(n1, oper, n2);

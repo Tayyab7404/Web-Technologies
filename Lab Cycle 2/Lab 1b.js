@@ -1,23 +1,19 @@
-// Lab 1 b:
+// Largest Among Three Numbers:
 
-function findMax(a, b, c) 
+function Largest(a, b, c) 
 {
-    let max = a;
-	
-    if (b > max) 
-	{
-        max = b;
-    }
-    if (c > max) 
-	{
-        max = c;
-    }
-	
-    return max;
+  	let max = a;
+
+	if(b > max)
+		max = b;
+	if(c > max)
+		max = c;
+
+	return max;
 }
 
-let a = prompt("Enter first number: ");
-let b = prompt("Enter second number: ");
-let c = prompt("Enter third number: ");
+let a = window.prompt("Enter First Number:");
+let b = window.prompt("Enter Second Number:");
+let c = window.prompt("Enter Third Number:");
 
-console.log("Largest number among",a,b,c,"is",findMax(a,b,c));
+document.writeln("<h1>Largest Number Among ",a,", ",b,", ",c," is ",Largest(a,b,c),"</h1>");
