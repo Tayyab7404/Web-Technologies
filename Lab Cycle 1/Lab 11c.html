@@ -2,52 +2,31 @@
 
 <html>
 	<head>
-		<title>Square Animation Example</title>
+		<title>Square Animation</title>
 		<style>
+			body
+			{
+				background-color: rgb(92, 235, 92);
+			}
 			.square 
 			{
-				width: 50px;
-				height: 50px;
-				background-color: red;
+				width: 120px;
+				height: 120px;
+				background-color: rgb(240, 52, 18);
 				position: absolute;
 				animation: squareMove 4s linear infinite;
 			}
-
 			@keyframes squareMove 
 			{
-				0% 
-				{
-					top: 20px;
-					left: 30%;
-				}
-
-				25% 
-				{
-					top: 20px;
-					left: 70%;
-				}
-
-				50% 
-				{
-					top: 520px;
-					left: 70%;
-				}
-
-				75% 
-				{
-					top: 520px;
-					left: 30%;
-				}
-
-				100% 
-				{
-					top: 20px;
-					left: 30%;
-				}
+				0% { top: 20px; left: 30%; }
+				25% { top: 20px; left: 70%; }
+				50% { top: 520px; left: 70%; }
+				75% { top: 520px; left: 30%; }
+				100% { top: 20px; left: 30%; }
 			}
 		</style>
 	</head>
-	
+
 	<body>
 		<div class="square">
 		</div>
