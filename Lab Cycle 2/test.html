@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>User Input</title>
+    </head>
+
+    <body>
+        <p>Enter your name:</p>
+        <input type="text" id="name">
+        <input type="submit" value="SUBMIT" onclick="getName();">
+        <p id="name display"></p>
+        <script>
+            function getName()
+            {
+                let name = document.getElementById("name").value;
+
+                document.getElementById("name display").innerHTML = "Your name is " + name;
+            }
+        </script>
+    </body>
+</html>

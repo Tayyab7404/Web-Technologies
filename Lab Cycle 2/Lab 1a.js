@@ -8,9 +8,12 @@ function isLeapYear(year)
     		return false;
 }
 
-let year = window.prompt("Enter a year:");
+function getYear()
+{
+	let year = document.getElementById("year").value;
 
-if(isLeapYear(year))
-	document.writeln("<h1>",year," is a Leap Year</h1>");
-else
-	document.writeln("<h1>",year," is not a Leap Year</h1>");
+	if(isLeapYear(year))
+		document.getElementById("output display").innerHTML = year + " is a Leap Year";
+	else
+		document.getElementById("output display").innerHTML = year + " is not a Leap Year";
+}

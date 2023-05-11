@@ -12,8 +12,11 @@ function Largest(a, b, c)
 	return max;
 }
 
-let a = window.prompt("Enter First Number:");
-let b = window.prompt("Enter Second Number:");
-let c = window.prompt("Enter Third Number:");
+function getNum()
+{
+	let n1 = document.getElementById("num1").value;
+	let n2 = document.getElementById("num2").value;
+	let n3 = document.getElementById("num3").value;
 
-document.writeln("<h1>Largest Number Among ",a,", ",b,", ",c," is ",Largest(a,b,c),"</h1>");
+	document.getElementById("output display").innerHTML = "Largest Number Among "+n1+", "+n2+", "+n3+" is "+Largest(n1,n2,n3);
+}
