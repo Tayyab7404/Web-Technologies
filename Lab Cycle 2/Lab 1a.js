@@ -10,10 +10,17 @@ function isLeapYear(year)
 
 function getYear()
 {
-	let year = document.getElementById("year").value;
+	let year = parseInt(document.getElementById("year").value);
+	let answer = '';
 
-	if(isLeapYear(year))
-		document.getElementById("output display").innerHTML = year + " is a Leap Year";
+	if(year>0 && year<=9999)
+	{	if(isLeapYear(year))
+			answer = year + " is a Leap Year";
+		else
+			answer = year + " is not a Leap Year";
+	}
 	else
-		document.getElementById("output display").innerHTML = year + " is not a Leap Year";
+		answer = "Invalid Year!";
+	
+	document.getElementById("output").innerHTML = answer;
 }

@@ -1,6 +1,6 @@
 // Largest Among Three Numbers:
 
-function Largest(a, b, c) 
+function largestAmongThree(a, b, c) 
 {
   	let max = a;
 
@@ -14,9 +14,16 @@ function Largest(a, b, c)
 
 function getNum()
 {
-	let n1 = document.getElementById("num1").value;
-	let n2 = document.getElementById("num2").value;
-	let n3 = document.getElementById("num3").value;
+	let n1 = parseFloat(document.getElementById("num1").value);
+	let n2 = parseFloat(document.getElementById("num2").value);
+	let n3 = parseFloat(document.getElementById("num3").value);
 
-	document.getElementById("output display").innerHTML = "Largest Number Among "+n1+", "+n2+", "+n3+" is "+Largest(n1,n2,n3);
+	let answer = '';
+
+	if(Math.floor(n1%1) <= 0 && Math.floor(n2%1) <= 0 && Math.floor(n3%1) <= 0)
+		answer = "Largest Number Among "+n1+", "+n2+", "+n3+" = "+largestAmongThree(n1,n2,n3);
+	else
+		answer = "Invalid Number!";
+	
+	document.getElementById("output").innerHTML = answer;
 }

@@ -1,9 +1,14 @@
 // Sum of Digits of a Number:
 
-function SumOfDigits(number)
+function sumOfDigits(number)
 {
     let sum = 0;
     let rem = 0;
+
+    if(number < 0)
+    {
+        number *= -1;
+    }
 
     while(number>0)
     {
@@ -15,6 +20,14 @@ function SumOfDigits(number)
     return sum;
 }
 
-number = parseInt(window.prompt("Enter a number:"));
+function getNum()
+{
+    let number = parseInt(document.getElementById("num").value);
+    let answer = 0;
 
-document.writeln("<h1>Sum of Digits of ",number," = ",SumOfDigits(number),"</h1>");
+    if(number===0 || number<0 || number>0)
+        answer = "Sum of Digits of "+number+" = "+sumOfDigits(number);
+    else answer = "Invalid number!"
+
+    document.getElementById("output").innerHTML = answer;
+}

@@ -1,6 +1,6 @@
 // Simple Calculator:
 
-function Calculate(n1, oper, n2)
+function calculate(n1, oper, n2)
 {
 	switch(oper)
 	{
@@ -12,6 +12,8 @@ function Calculate(n1, oper, n2)
 			return n1 * n2;
 		case '/':
 			return n1 / n2;
+		case '//':
+			return Math.floor(n1/n2);
 		case '%':
 			return n1 % n2;
 		case '**':
@@ -23,14 +25,14 @@ function Calculate(n1, oper, n2)
 
 function getData()
 {
-	let n1 = document.getElementById("num1").value;
+	let n1 = parseFloat(document.getElementById("num1").value);
 	let oper = document.getElementById("oper").value;
-	let n2 = document.getElementById("num2").value;
+	let n2 = parseFloat(document.getElementById("num2").value);
 
-	output = Calculate(n1, oper, n2);
+	output = calculate(n1, oper, n2);
 
 	if(output != "Invalid Operator!")
-		document.getElementById("output display").innerHTML = "The Expression: "+n1+" "+oper+" "+n2+" = "+Calculate(n1, oper, n2);
-	else
-	document.getElementById("output display").innerHTML = output;
+		output = "The Expression: " + n1+ " " + oper + " " + n2 + " = " + output;
+	
+	document.getElementById("output").innerHTML = output;
 }
