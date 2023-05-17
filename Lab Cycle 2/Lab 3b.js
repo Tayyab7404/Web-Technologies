@@ -1,12 +1,10 @@
 // Recursive Function for Factorial:
 function Factorial(number)
 {
-    let fact = 1;
+    if(number <= 1)
+        return 1;
     
-    for(let i=number; i>1; i--)
-        fact = fact * i;
-
-    return fact;
+    return number * Factorial(number-1);
 }
 
 // Recursive Funtion for Fibonacci:
@@ -23,14 +21,19 @@ function Fibonacci(number)
 // Recursive Funtion for Power:
 function Power(base, power)
 {
-    if(power%1 !== 0)
-        return base ** power
+    
     if(power === 0)
         return 1;
     if(power === 1)
         return base;
     if(power < 0)
         return 1/Power(base, -power);
+    if(base<0 && power%2 == 0)
+        return Power(-base, power);
+    if(base<0 && power%2 == 1)
+        return -Power(-base, power);
+    if(power%1 !== 0)
+        return base ** power
 
     return base * Power(base, power-1)
 }
@@ -87,10 +90,15 @@ function getBaseExp()
 {
     let base = parseFloat(document.getElementById("BaseNum").value);
     let exp = parseFloat(document.getElementById("ExpNum").value);
-    let answer = '';
+    let answer = "The Expression: " + base + " ** " + exp + " = ";
 
     if(Math.floor(base%1) <= 0 && Math.floor(exp%1) <= 0)
-        answer = "The Expression: " + base + " ** " + exp + " = " + Power(base, exp);
+    {
+        if(base < 0 && exp%1 !== 0)
+            answer += "Complex Number";
+        else
+            answer +=  Power(base, exp);
+    }
     else
         answer = "Invalid Number!";
 
