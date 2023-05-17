@@ -6,22 +6,48 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title></title>
+        <title>Recursive Functions</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <script src="Lab 3b.js"></script>
     </head>
 
     <body>
-        <h1>
-            <label>Select the operation you want to perform:</label><br>
-            <div style="border: 3px solid black; width: max-content;align-items:flex-start;">
-                <input type="radio" onclick="Factorial()">
-                <label>Factorial</label><br>
-                <input type="radio" onclick="Fibonacci()">
-                <label>Fibonacci</label><br>
-                <input type="radio" onclick="Power()">
-                <label>Power</label><br>
-            </h1>
+        <div>
+            <span><u>Factorial:</u><br>
+            Enter a number:</span>
+            <input type="number" id="FactNum"><br>
+            <input type="submit" value="SUBMIT" onclick="getFactNum();"><br>
+            <center>
+                <div class="output">
+                    <h1 id="FactOutput"></h1>
+                </div>
+            </center>
+        </div>
+
+        <div>
+            <span><u>Fibonacci Numbers:</u><br>
+            Enter the count:</span>
+            <input type="number" id="FibCount"><br>
+            <input type="submit" value="SUBMIT" onclick="getFibCount();"><br>
+            <center>
+                <div class="output">
+                    <h1 id="FibOutput"></h1>
+                </div>
+            </center>
+        </div>
+
+        <div>
+            <span><u>Power:</u><br>
+            Enter the Base:</span>
+            <input type="number" id="BaseNum"><br>
+            <span>Enter the Power:</span>
+            <input type="number" id="ExpNum"><br>
+            <input type="submit" value="SUBMIT" onclick="getBaseExp()">
+            <center>
+                <div class="output">
+                    <h1 id="PowerOutput"></h1>
+                </div>
+            </center>
         </div>
     </body>
 </html>

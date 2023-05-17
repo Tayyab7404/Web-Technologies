@@ -3,9 +3,9 @@
 function isLeapYear(year) 
 {
   	if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) 
-    		return true;
+		return true;
 	else 
-    		return false;
+    	return false;
 }
 
 function getYear()
@@ -14,7 +14,8 @@ function getYear()
 	let answer = '';
 
 	if(year>0 && year<=9999)
-	{	if(isLeapYear(year))
+	{	
+		if(isLeapYear(year))
 			answer = year + " is a Leap Year";
 		else
 			answer = year + " is not a Leap Year";

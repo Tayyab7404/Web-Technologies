@@ -1,5 +1,4 @@
 // Reverse of a number:
-
 function reverseNum(number) 
 {
     let rev = '';
@@ -21,11 +20,12 @@ function reverseNum(number)
 function getNum()
 {
     let number = parseInt(document.getElementById("num").value);
+	let answer = '';
 	
-	let answer = reverseNum(number);
-	
-    if(answer === "")
-		document.getElementById("output").innerHTML = "Invalid Number!";
+    if(Number.isInteger(number))
+        answer = "Reverse of " + number + " = " + reverseNum(number);
 	else
-		document.getElementById("output").innerHTML = "Reverse of " + number + " = " + answer;
+        answer = "Invalid Number!";
+
+	document.getElementById("output").innerHTML = answer;
 }

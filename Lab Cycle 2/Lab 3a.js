@@ -2,46 +2,79 @@
 function GCD(a, b) 
 {
     if (b === 0) 
-        return a;
+        return Math.abs(a);
     else
-        return GCD(b, a % b);
+        return Math.abs(GCD(b, a%b));
 }
 
 // Reverse a Number:
-function Reverse(number)
+function reverseNum(number) 
 {
-    let rev = 0;
+    let rev = '';
     let rem = 0;
-    let flag = 0;
-
-    if(number%10 == 0) flag = 1;
+	
+	if(number < 0)
+		number *= -1;
 
     while(number>0)
     {
         rem = number%10;
-        rev = rev*10 + rem;
+        rev += rem;
         number = Math.floor(number/10);
     }
-    
-    if(flag)
-        return '0' + rev;
-    else
-        return rev;
+	
+    return rev;
 }
 
 // Generate Random Numbers:
-function RandomNumber(min, max) 
+function genRandNum(min ,max)
 {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return Math.floor(Math.random()*(max - min) + min);
 }
 
-let n1 = parseInt(window.prompt("Enter first number to find GCD:"));
-let n2 = parseInt(window.prompt("Enter second number to find GCD:"));
-document.writeln("<h1>GCD of ",n1," and ",n2," = ",GCD(n1, n2),"</h1>");
+function getGcdNum()
+{
+    let num1 = parseInt(document.getElementById("gcdNum1").value);
+    let num2 = parseInt(document.getElementById("gcdNum2").value);
+    let answer = '';
 
-let n3 = parseInt(window.prompt("Enter a number to reverse:"));
-document.writeln("<h1>The Reverse of Number: ",n3," = ",Reverse(n3),"</h1>")
+    if(Number.isInteger(num1) && Number.isInteger(num2))
+        answer = "GCD of " + num1 + " and " + num2 + " = " + GCD(num1, num2);
+    else
+        answer = "Invalid Number!";
 
-let n4 = parseInt(window.prompt("Enter the range to generate random number (n1):"));
-let n5 = parseInt(window.prompt("Enter the range to generate random number (n2):"));
-document.writeln("<h1>A Random Number in the range ",n4," and ",n5," is ",RandomNumber(n4, n5),"</h1>");
+    document.getElementById("GcdOutput").innerHTML = answer;
+}
+
+function getRevNum()
+{
+    let number = parseInt(document.getElementById("revNum").value);
+	
+	let answer = '';
+	
+    if(Number.isInteger(number))
+        answer = "Reverse of " + number + " = " + reverseNum(number);
+	else
+        answer = "Invalid Number!";
+
+	document.getElementById("ReverseOutput").innerHTML = answer;
+}
+
+function getRandRange()
+{
+    let min = parseInt(document.getElementById("min").value);
+    let max = parseInt(document.getElementById("max").value);
+    let answer = '';
+
+    if(Number.isInteger(min) && Number.isInteger(min))
+    {
+        if(min < max-1)
+            answer = "A Random Number in the range (" + min + ", " + max + "): " + genRandNum(min, max);
+        else
+            answer = "min should be less than max!"
+    }
+    else
+        answer = "Invalid Number!";
+
+    document.getElementById("RandomOutput").innerHTML = answer;
+}

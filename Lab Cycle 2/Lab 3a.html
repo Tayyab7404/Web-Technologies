@@ -6,11 +6,50 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="Lab 3a.js"></script>
+        <title>GCD, Reverse Number, Random Number</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script src="Lab 3a.js"></script>
     </head>
 
     <body>
+        <div>
+            <span><u>GCD:</u></span><br>
+            <span>Enter number 1:</span>
+            <input type="number" id="gcdNum1"><br>
+            <span>Enter number 2:</span>
+            <input type="number" id="gcdNum2"><br>
+            <input type="submit" value="SUBMIT" onclick="getGcdNum();"><br>
+            <center>
+                <div class="output">
+                    <h1 id="GcdOutput"></h1>
+                </div>
+            </center>
+        </div>
+
+        <div>
+            <span><u>Reverse Number:</u></span><br>
+            <span>Enter the number:</span>
+            <input type="number" id="revNum"><br>
+            <input type="submit" value="SUBMIT" onclick="getRevNum();"><br>
+            <center>
+                <div class="output">
+                    <h1 id="ReverseOutput"></h1>
+                </div>
+            </center>
+        </div>
+
+        <div>
+            <span><u>Random Number:</u></span><br>
+            <span>Enter the range(max exclusive):</span><br>
+            <input type="number" id="min" placeholder="min">
+            <span>to</span>
+            <input type="number" id="max" placeholder="max"><br>
+            <input type="submit" value="SUBMIT" onclick="getRandRange()">
+            <center>
+                <div class="output">
+                    <h1 id="RandomOutput"></h1>
+                </div>
+            </center>
+        </div>
     </body>
 </html>

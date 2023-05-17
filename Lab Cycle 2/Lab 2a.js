@@ -23,11 +23,12 @@ function sumOfDigits(number)
 function getNum()
 {
     let number = parseInt(document.getElementById("num").value);
-    let answer = 0;
-
-    if(number===0 || number<0 || number>0)
-        answer = "Sum of Digits of "+number+" = "+sumOfDigits(number);
-    else answer = "Invalid number!"
+    let answer = '';
+    
+    if(Number.isInteger(number))
+        answer = "Sum of Digits of " + number + " = " + sumOfDigits(number);
+    else 
+        answer = "Invalid Number!"
 
     document.getElementById("output").innerHTML = answer;
 }

@@ -29,10 +29,17 @@ function getData()
 	let oper = document.getElementById("oper").value;
 	let n2 = parseFloat(document.getElementById("num2").value);
 
-	output = calculate(n1, oper, n2);
+	let answer = '';
 
-	if(output != "Invalid Operator!")
-		output = "The Expression: " + n1+ " " + oper + " " + n2 + " = " + output;
+	if(Math.floor(n1%1) <= 0 && Math.floor(n2%1) <= 0)
+	{
+		answer = calculate(n1, oper, n2);
+		
+		if(answer != "Invalid Operator!")
+			answer = "The Expression: " + n1 + " " + oper + " " + n2 + " = " + answer;
+	}
+	else
+		answer = "Invalid Number!";
 	
-	document.getElementById("output").innerHTML = output;
+	document.getElementById("output").innerHTML = answer;
 }

@@ -1,32 +1,98 @@
-// Recursive Funtion for Factorial:
-function Factorial()
+// Recursive Function for Factorial:
+function Factorial(number)
 {
-    let number = parseInt(window.prompt("Enter a number to find Factorial:"));
+    let fact = 1;
     
-    function myFactorial(number)
-    {
-        let fact = 1;
-        let i = 1;
+    for(let i=number; i>1; i--)
+        fact = fact * i;
 
-        for(i=number; i>1; i--)
-            fact = fact * i;
-
-        return fact;
-    }
-
-    document.writeln("<h1>Factorial of ",number," = ",myFactorial(number),"</h1>");
+    return fact;
 }
 
 // Recursive Funtion for Fibonacci:
 function Fibonacci(number)
 {
-    let range = parseInt(window.prompt("Enter the range to print Fibonacci Numbers:"));
+    if(number === 1)
+        return 0;
+    if(number === 2 || number === 3)
+        return 1;
 
-
+    return Fibonacci(number-1) + Fibonacci(number-2);
 }
 
 // Recursive Funtion for Power:
 function Power(base, power)
 {
+    if(power%1 !== 0)
+        return base ** power
+    if(power === 0)
+        return 1;
+    if(power === 1)
+        return base;
+    if(power < 0)
+        return 1/Power(base, -power);
 
+    return base * Power(base, power-1)
+}
+
+function getFactNum()
+{
+    let num = parseInt(document.getElementById("FactNum").value);
+    let answer = '';
+
+    if(Number.isInteger(num))
+    {
+        if(num >= 0)
+            answer = "Factorial of " + num + " = " + Factorial(num);
+        else
+            answer = "Factorial of " + num + " = Undefined";
+    }
+        
+    else answer = "Invalid Number!";
+
+    document.getElementById("FactOutput").innerHTML = answer;
+}
+
+function getFibCount()
+{
+    let count = parseInt(document.getElementById("FibCount").value);
+    let answer = '';
+
+    if(Number.isInteger(count))
+    {
+        if(count > 0)
+        {
+            if(count > 40)
+                answer = "Stack Overflow!<br>Cannot print " + count + " Fibonacci Numbers";
+            else
+            {
+                let i;
+                answer = "The First " + count + " Fibonacci Numbers are:<br>";
+
+                for(i=1; i<count; i++)
+                    answer += Fibonacci(i) + ", ";
+                answer += Fibonacci(i);
+            }
+        }
+        else
+            answer = "Invalid Count!";
+    }
+    else
+        answer = "Invalid Number!";
+
+    document.getElementById("FibOutput").innerHTML = answer;
+}
+
+function getBaseExp()
+{
+    let base = parseFloat(document.getElementById("BaseNum").value);
+    let exp = parseFloat(document.getElementById("ExpNum").value);
+    let answer = '';
+
+    if(Math.floor(base%1) <= 0 && Math.floor(exp%1) <= 0)
+        answer = "The Expression: " + base + " ** " + exp + " = " + Power(base, exp);
+    else
+        answer = "Invalid Number!";
+
+    document.getElementById("PowerOutput").innerHTML = answer;
 }
