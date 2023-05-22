@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
         <meta charset='utf-8'>
         <meta http-equiv='X-UA-Compatible' content='IE=edge'>
@@ -9,17 +9,26 @@
         <title>C Section Time Table</title>
 
         <style>
+            body
+            {
+				background-color: black;
+                font-family: Calibri;
+                font-size: 20px;
+                font-weight: bold;
+            }
             table,th,td
             {
                 border: 3px solid #A9A9A9;
                 border-collapse: collapse;
+                margin-top: 50px;
+                width: 1000px;
             }
-			th:hover
-			{
-				background-color: #A9A9A9;
-				color: black;
-			}
-			td:hover
+			th,td
+            {
+                text-align: center;
+                height: 40px;
+            }
+			th:hover, td:hover
 			{
 				background-color: #A9A9A9;
 				color: black;
@@ -27,82 +36,80 @@
         </style>
     </head>
 
-	<body bgcolor="black">
-        <font face="Verdana" size="4" color="white">
-            <table align="center" width="1000" height="400">
-                <tr align="center">
-                    <th colspan="4">SECTION-C</th>
-                    <th colspan="4">CLASS ROOM: CB 408</th>
-                </tr>
+	<body>
+        <table align="center">
+            <tr>
+                <th colspan="4">SECTION-C</th>
+                <th colspan="4">CLASS ROOM: CB 408</th>
+            </tr>
 
-                <tr align="center">
-                    <th>DAY</th>
-                    <th>8:00-9:00</th>
-                    <th>9:00-10:00</th>
-                    <th>10:00-11:00</th>
-                    <th>11:00-12:00</th>
-                    <th>12:00-1:00</th>
-                    <th>1:00-2:00</th>
-                    <th>2:00-3:00</th>
-                </tr>
+            <tr>
+                <th>DAY</th>
+                <th>8:00-9:00</th>
+                <th>9:00-10:00</th>
+                <th>10:00-11:00</th>
+                <th>11:00-12:00</th>
+                <th>12:00-1:00</th>
+                <th>1:00-2:00</th>
+                <th>2:00-3:00</th>
+            </tr>
 
-                <tr align="center">
-                    <th>MON</th>
-                    <td>E&H</td>
-                    <td>CS</td>
-                    <td>DBMS</td>
-                    <th rowspan="6"><br>🍔<br>L<br>U<br>N<br>C<br>H<br>🍔<br></th>
-                    <td>OS</td>
-                    <td>WT</td>
-                    <td>SE</td>
-                </tr>
+            <tr>
+                <th>MON</th>
+                <td>E&H</td>
+                <td>CS</td>
+                <td>DBMS</td>
+                <th rowspan="6"><br>🍔<br>L<br>U<br>N<br>C<br>H<br>🍔<br></th>
+                <td>OS</td>
+                <td>WT</td>
+                <td>SE</td>
+            </tr>
 
-                <tr align="center">
-                    <th>TUE</th>
-                    <td>OS</td>
-                    <td>WT</td>
-                    <td>CS</td>
-                    <td colspan="3"> 👨🏻‍💻 WT LAB 👨🏻‍💻 </td>
-                </tr>
+            <tr>
+                <th>TUE</th>
+                <td>OS</td>
+                <td>WT</td>
+                <td>CS</td>
+                <td colspan="3"> 👨🏻‍💻 WT LAB 👨🏻‍💻 </td>
+            </tr>
 
-                <tr align="center">
-                    <th>WED</th>
-                    <td colspan="3"> 👨🏻‍💻 DBMS LAB 👨🏻‍💻 </td>
-                    <td>CS</td>
-                    <td>SE</td>
-                    <td>DBMS</td>
-                </tr>
+            <tr>
+                <th>WED</th>
+                <td colspan="3"> 👨🏻‍💻 DBMS LAB 👨🏻‍💻 </td>
+                <td>CS</td>
+                <td>SE</td>
+                <td>DBMS</td>
+            </tr>
 
-                <tr align="center">
-                    <th>THU</th>
-                    <td colspan="2"> 👨🏻‍💻 SOC LAB 👨🏻‍💻 </td>
-                    <td>WT</td>
-                    <td>DBMS</td>
-                    <td>SE</td>
-                    <td>E&H</td>
-                </tr>
+            <tr>
+                <th>THU</th>
+                <td colspan="2"> 👨🏻‍💻 SOC LAB 👨🏻‍💻 </td>
+                <td>WT</td>
+                <td>DBMS</td>
+                <td>SE</td>
+                <td>E&H</td>
+            </tr>
 
-                <tr align="center">
-                    <th>FRI</th>
-                    <td>SOC</td>
-                    <td>OS</td>
-                    <td>WT</td>
-                    <td colspan="3"> 👨🏻‍💻 CS LAB 👨🏻‍💻 </td>
-                </tr>
+            <tr>
+                <th>FRI</th>
+                <td>SOC</td>
+                <td>OS</td>
+                <td>WT</td>
+                <td colspan="3"> 👨🏻‍💻 CS LAB 👨🏻‍💻 </td>
+            </tr>
 
-                <tr align="center">
-                    <th>SAT</th>
-                    <td colspan="2"> 👨🏻‍💻 CC LAB 👨🏻‍💻 </td>
-                    <td>SOC</td>
-                    <td>OS</td>
-                    <td>CS</td>
-                    <td>DBMS</td>
-                </tr>
-            </table>
+            <tr>
+                <th>SAT</th>
+                <td colspan="2"> 👨🏻‍💻 CC LAB 👨🏻‍💻 </td>
+                <td>SOC</td>
+                <td>OS</td>
+                <td>CS</td>
+                <td>DBMS</td>
+            </tr>
+        </table><br><br>
 
-            <br><br>
-
-            <center><img src="Signatures.jpg" alt="HOD Signature"></center>
-        </font>
-</body>
+        <center>
+            <img src="Signatures.jpg" alt="HOD Signature">
+        </center>
+    </body>
 </html>
