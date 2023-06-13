@@ -6,11 +6,45 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="Lab 4c.js"></script>
+        <title>Matrix Addition and Multiplication</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="Lab 4c.js"></script>
+        <style>
+            .Matrix
+            {
+                border: 3px solid black;
+                padding: 10px;
+                width: max-content;
+            }
+            button, div, table
+            {
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+            td
+            {
+                text-align: center;
+                width: 35px;
+                height: 35px;
+            }
+        </style>
     </head>
 
     <body>
+        <center>
+            <button onclick="showMatrices();">Show Matrices</button><br>
+            <span>Matrix 1:</span>
+            <table class="Matrix" id="Matrix1"></table>
+            <span>Matrix 2:</span>
+            <table class="Matrix" id="Matrix2"></table>
+
+            <button onclick="add();">ADD</button><br>
+            <span>Matrix 1 + Matrix 2:</span>
+            <table class="Matrix" id="AdditionOutput"></table>
+
+            <button onclick="multiply();">MULTIPLY</button><br>
+            <span>Matrix 1 * Matrix 2:</span>
+            <table class="Matrix" id="MultiplicationOutput"></table>
+        </center>
     </body>
 </html>
