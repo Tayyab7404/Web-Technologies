@@ -4,7 +4,7 @@ let Output = document.getElementById("StringOutput");
 
 let str = new String("Hello, My Name is Tayyab.");
 
-Output.innerHTML = "<u>Original String:</u> " + str + "<br><br><u>String Operations:<u><br>";
+Output.innerHTML = "<u>Original String:</u> " + str + "<br><br><u>String Operations:</u><br>";
 
 Output.innerHTML += "1. String Length: " + str.length + "<br>";
 Output.innerHTML += "2. Character at index 18: " + str.charAt(18) + "<br>";
