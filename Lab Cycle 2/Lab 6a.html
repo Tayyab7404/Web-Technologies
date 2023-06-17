@@ -6,11 +6,53 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title></title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="Lab 6a.js"></script>
+        <title>Form Events</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <style>
+            h1
+            {
+                margin-top: 70px;
+            }
+            div
+            {
+                text-align: left;
+                width: max-content;
+                border: 3px solid black;
+                padding: 10px;
+            }
+            .color-sample 
+			{
+				display: inline-block;
+				width: 30px;
+				height: 30px;
+				border-radius: 100%;
+				margin-right: 10px;
+			}
+			.yellow { background-color: yellow; }
+			.orange { background-color: orange; }
+        </style>
+        <script src="Lab 6a.js"></script>
     </head>
 
     <body>
+        <h1><u>Student Details</u></h1>
+
+        <form action="post" autocomplete="off">
+            <span>Enter your Name:</span>
+            <input type="text" id="Name" onchange="NameChange()" onfocus="NameFocus()" onblur="NameBlur()">
+            <br>
+            <span>Enter your Regd. no:</span>
+            <input type="text" id="Regdno" onfocus="RegdnoFocus()" onblur="RegdnoBlur()">
+            <br>
+            <span>Enter your Section:</span>
+            <input type="text" id="Section" onfocus="SectionFocus()" onblur="SectionBlur()">
+        </form>
+        
+        <center>
+            <div>
+                <span class="color-sample yellow"></span><span>Focus given</span><br>
+                <span class="color-sample orange"></span><span>Focus removed</span><br>
+            </div>
+        </center>
     </body>
 </html>
