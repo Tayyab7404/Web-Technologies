@@ -26,8 +26,8 @@ input[type="submit"],input[type="reset"], button
 	cursor: pointer;
 	font-size: 16px;
 	margin-top: 10px;
-	margin-bottom: 15px;
-	width: 10%;
+	margin-bottom: 10px;
+	width: max-content;
 }
 input[type="submit"]:hover, input[type="reset"]:hover, button:hover
 {
