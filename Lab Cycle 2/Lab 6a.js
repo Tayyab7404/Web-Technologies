@@ -8,12 +8,12 @@ function NameChange()
 function OnFocus() 
 {
     // Focus = Changes the background color of input to yellow
-    document.getElementById("Name").style.background= "yellow";
+    document.getElementById("Name").style.background = "yellow";
 }
 function OnBlur() 
 {
     // No focus = Changes the background color of input to orange
-    document.getElementById("Name").style.background= "orange";
+    document.getElementById("Name").style.background = "orange";
 }
 
 Name = document.getElementById("Name");
