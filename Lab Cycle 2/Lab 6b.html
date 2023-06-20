@@ -6,7 +6,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title></title>
+        <title>Mouse Events</title>
         <link rel="stylesheet" type="text/css" href="style.css">
         <style>
             div
@@ -16,6 +16,12 @@
 				padding: 25px;
 				text-align: left;
 			}
+            #emoji
+            {
+                border: 0px;
+                width: 40px;
+                height: 32px;
+            }
         </style>
         <script src="Lab 6b.js"></script>
     </head>
@@ -25,13 +31,21 @@
 
         <center>
             <div>
-                <h2><u>1. OnClick:</u></h2>
+                <h2><u>1. OnClick: </u></h2>
                 <button onclick="Click()">Click</button><br>
                 <span id="OnClickText"></span>
 
-                <h2><u>2. OnMouseDown and OnMouseUp</u></h2>
+                <h2><u>2. OnMouseDown and OnMouseUp: </u></h2>
+                <span id="OnMouseDownText" onmousedown="MouseDown()" onmouseup="MouseUp()">
+                    Click on this text.
+                </span>
+
+                <h2><u>3. OnMouseEnter and OnMouseLeave: </u></h2>
+                <img id="emoji" src="smiley emoji.png" alt="smiley emoji" onmouseenter="MouseEnter(this)" onmouseleave="MouseLeave(this)">
+                
+                <h2><u>4. OnMouseOver and OnMouseOut: </u></h2>
+                <span id="MouseOverText" onmouseover="MouseOver(this)" onmouseout="MouseOut(this)">Move the cursor Over this text.</span>
             </div>
         </center>
-            
     </body>
 </html>
