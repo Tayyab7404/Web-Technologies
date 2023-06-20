@@ -23,7 +23,7 @@
                 height: 32px;
             }
         </style>
-        <script src="Lab 6b.js"></script>
+        
     </head>
 
     <body>
@@ -32,20 +32,20 @@
         <center>
             <div>
                 <h2><u>1. OnClick: </u></h2>
-                <button onclick="Click()">Click</button><br>
+                <button id="OnClickButton">Click</button><br>
                 <span id="OnClickText"></span>
 
                 <h2><u>2. OnMouseDown and OnMouseUp: </u></h2>
-                <span id="OnMouseDownText" onmousedown="MouseDown()" onmouseup="MouseUp()">
-                    Click on this text.
-                </span>
+                <span id="OnMouseDownText">Click on this text.</span>
 
                 <h2><u>3. OnMouseEnter and OnMouseLeave: </u></h2>
-                <img id="emoji" src="smiley emoji.png" alt="smiley emoji" onmouseenter="MouseEnter(this)" onmouseleave="MouseLeave(this)">
+                <img id="emoji" src="smiley emoji.png" alt="smiley emoji">
                 
                 <h2><u>4. OnMouseOver and OnMouseOut: </u></h2>
-                <span id="MouseOverText" onmouseover="MouseOver(this)" onmouseout="MouseOut(this)">Move the cursor Over this text.</span>
+                <span id="MouseOverText">Move the cursor Over this text.</span>
             </div>
         </center>
+        
+        <script src="Lab 6b.js"></script>
     </body>
 </html>
