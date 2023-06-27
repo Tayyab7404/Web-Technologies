@@ -1,1 +1,74 @@
+<?xml version='1.0' encoding="UTF-8"?>
 
+<!--EXAMPLE 1:
+<warning>
+    <para>
+        <emphasis type="bold">May Cause serious injury</emphasis>
+        Exercise extreme caution as this procedure could result in serious injury or death if precautions are not taken.
+    </para>
+</warning>
+-->
+<!--EXAMPLE 2:
+<library>
+    <book>
+        <author>T.Tayyab</author>
+        <title>Introduction to Machine Learing</title>
+    </book>
+    <book>
+        <author>V.Neeraj</author>
+        <title>Applications of Cyber Security</title>
+    </book>
+    <book>
+        <author>P.Shreyas</author>
+        <title>The Age of Computers</title>
+    </book>
+</library>
+-->
+<!--Business letter marked up with XML:-->
+<!DOCTYPE letter SYSTEM "letter.dtd">
+<letter>
+    <contact type = "sender">
+        <name>Tayyab</name>
+        <address1>D.no: 1-412</address1>
+        <address2>Medikonduru</address2>
+        <city>Guntur</city>
+        <state>Andhra Pradesh</state>
+        <pincode>522438</pincode>
+        <phone>9032301700</phone>
+        <flag gender = "M" />
+    </contact>
+
+    <contact type = "receiver">
+        <name>Neeraj</name>
+        <address1>D.no: 2-36A</address1>
+        <address2>Nehru Nagar</address2>
+        <city>Guntur</city>
+        <state>Andhra Pradesh</state>
+        <pincode>522006</pincode>
+        <phone>6309321875</phone>
+        <flag gender = "M" />
+    </contact>
+
+    <salutation>Dear Sir:</salutation>
+    <paragraph>
+        It is our privilege to inform you about our new database
+        managed with XML. This new system allows you to reduce the 
+        load on your inventory list server by having the client machine
+        perform the work of sorting and filtering the data.
+    </paragraph>
+    <paragraph>
+        Please visit our website for availability and pricing.
+    </paragraph>
+
+    <closing>Sincerely,</closing>
+    <signature>T.Tayyab</signature>
+</letter>
+
+<!--Name Space:
+<cont:contact xmlns:cont="http://cse.rvrjcce.ac.in/contact.php">  
+    <cont:name>Tayyab</cont:name>
+    <cont:company>Accenture</cont:company>  
+    <cont:phone>9032301700</cont:phone>
+    <cont:email>tayyabtavvagunta@gmail</cont:email>
+</cont:contact>
+-->
