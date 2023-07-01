@@ -15,6 +15,8 @@
     </head>
     <body>
         <h1>Hello World!</h1><br>
-        <a href ="./Genric">Genric Servlet</a>
+        <a href="./HelloWorld">Hello World</a><br>
+        <a href="./Generic">Generic</a><br>
+        <a href="./HelloServlet">Hello Servlet</a><br>
     </body>
 </html>
