@@ -12,7 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class Generic extends GenericServlet {
+public class Genric extends GenericServlet {
 
     public int c=0;
 public void init(ServletConfig cg)throws ServletException
