@@ -12,27 +12,27 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-/**
- *
- * @author y21cs172
- */
-public class LoginDemo extends HttpServlet {
+/* @author y21cs172 */
 
-   public void doPost(HttpServletRequest request, HttpServletResponse response)
-      throws ServletException, IOException {
-
+public class LoginDemo extends HttpServlet 
+{
+   public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException 
+   {
       // Set response content type
       response.setContentType("text/html");
-
+	   
       // Actual logic goes here.
       PrintWriter out = response.getWriter();
-      String name=request.getParameter("username");//will return value
-      String pwd=request.getParameter("pass");
-	  //out.println("Welcome "+name);
-      if(name.equalsIgnoreCase("Tayyab")&&pwd.equalsIgnoreCase("12345"))
-          out.println("Login Successful! "+name);
+      String name = request.getParameter("username"); //will return value
+      String pwd = request.getParameter("pass");
+      
+      if(name.equalsIgnoreCase("Tayyab") && pwd.equalsIgnoreCase("12345"))
+      {
+          out.println("Login Successful!");
+	  out.println("Welcome "+name);
+      }
       else
           out.println("Login Unsucceusful! "+name);
-	  out.close();
+      out.close();
    }
 }
